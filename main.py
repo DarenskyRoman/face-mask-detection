@@ -38,10 +38,10 @@ def draw(img, face):
             
     cv2.putText(img,mask_label[pred_label],
                 (x, y+90), cv2.FONT_HERSHEY_SIMPLEX,
-                0.5, label_color[pred_label], 2)
+                0.5, label_color[pred_label], 5)
             
     cv2.rectangle(img,(x,y),(x+w,y+h), 
-                label_color[pred_label],2)
+                label_color[pred_label],5)
     
     return img
 
